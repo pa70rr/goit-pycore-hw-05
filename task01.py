@@ -18,11 +18,9 @@ def caching_fibonaccі() -> Callable[[int], int]:
     return fibonacci
 
 
-# Отримуємо функцію fibonacci
-fib = caching_fibonaccі()
-
-# Використовуємо функцію fibonacci для обчислення чисел Фібоначчі
-print(fib(10))  # Output: 55
-print(fib(15))  # Output: 610
-print(fib(0))  # Output: 0
-print(fib(1))  # Output: 1
+if __name__ == "__main__":
+    fib = caching_fibonaccі()
+    print(fib(10))  # Output: 55
+    print(fib(15))  # Output: 610
+    print(fib(0))  # Output: 0
+    print(fib(1))  # Output: 1
